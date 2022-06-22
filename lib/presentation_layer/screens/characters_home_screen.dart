@@ -40,7 +40,7 @@ class _CharactersHomeScreenState extends State<CharactersHomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: RoseQuartzColor,
+        backgroundColor: SpearmintColor,
         title: Text(
           "Characters",
           style: TextStyle(

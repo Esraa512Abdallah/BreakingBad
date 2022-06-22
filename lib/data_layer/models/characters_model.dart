@@ -9,7 +9,7 @@ class CharacterModel {
   final List<int>? appearance;
   final String? portrayed;
   final String? category;
-  final List<dynamic> betterCallSaulAppearance;
+  final List<dynamic>? betterCallSaulAppearance;
 
   CharacterModel(
       {required this.charId,
@@ -38,36 +38,8 @@ class CharacterModel {
       category: jsonData['category'],
       betterCallSaulAppearance: jsonData['betterCallSaulAppearance'],
     );
-    //return CharacterModel(
 
-    // charId: jsonData!['charId'],
-    // name: jsonData!['name'],
-    // birthday: jsonData['birthday'],
-    // occupation: jsonData['occupation'],
-    // img: jsonData['img'],
-    // status: jsonData['status'],
-    // nickname: jsonData['nickname'],
-    // appearance: jsonData['appearance'],
-    // portrayed: jsonData['portrayed'],
-    // category: jsonData['category'],
-    // betterCallSaulAppearance: jsonData['betterCallSaulAppearance'],
-
-    // );
   }
 
-// factory CharacterModel.fromJson(Map<String, dynamic> json) {
-//    charId : json!['char_id'];
-//    name = json['name'];
-//    birthday = json['birthday'];
-//    occupation = json['occupation'].cast<String>();
-//    img = json['img'];
-//    status = json['status'];
-//    nickname = json['nickname'];
-//    appearance = json['appearance'].cast<int>();
-//    portrayed = json['portrayed'];
-//    category = json['category'];
-//    betterCallSaulAppearance = json['betterCallSaulAppearance'];
-//
-//  }
 
 }

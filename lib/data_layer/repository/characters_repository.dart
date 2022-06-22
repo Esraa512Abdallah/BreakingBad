@@ -12,15 +12,12 @@ class AllCharactersRepository {
       final allCharacters = await charactersApi.getCharacter();
 
 
-
       print("repo allCharacters: $allCharacters");
-
 
        print(" repo allCharacters' Map : ${allCharacters.map((e) => CharacterModel.fromJson(e)).toList()}");
 
-      
-      
-      return (allCharacters).map((e) => CharacterModel.fromJson(e)).toList() ;
+
+      return allCharacters.map((character) => CharacterModel.fromJson(character)).toList() ;
 
     } catch (e) {
 

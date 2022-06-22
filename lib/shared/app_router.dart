@@ -18,7 +18,7 @@ class AppRouter {
     charactersCubit = CharactersCubit(allCharactersRepository);
   }
 
-  Route? generateRoute(RouteSettings settings) {
+  Route<dynamic>? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
@@ -30,5 +30,6 @@ class AppRouter {
       case '/characters_details_screen':
         return MaterialPageRoute(builder: (_) => CharactersDetailsScreen());
     }
+    return null ;
   }
 }
